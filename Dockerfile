@@ -25,7 +25,8 @@ RUN    apk update \
 	&& curl -L --silent ${JMETER_DOWNLOAD_URL} >  /tmp/dependencies/apache-jmeter-${JMETER_VERSION}.tgz  \
 	&& mkdir -p /opt  \
 	&& tar -xzf /tmp/dependencies/apache-jmeter-${JMETER_VERSION}.tgz -C /opt  \
-	&& rm -rf /tmp/dependencies
+	&& rm -rf /tmp/dependencies \
+ 	&& curl -L --silent https://github.com/xmeter-net/mqtt-jmeter/raw/master/Download/v2.0.2/mqtt-xmeter-fuse-2.0.2-jar-with-dependencies.jar  >  ${JMETER_HOME}/lib/ext/mqtt-xmeter-fuse-2.0.2-jar-with-dependencies.jar
 
 # TODO: plugins (later)
 # && unzip -oq "/tmp/dependencies/JMeterPlugins-*.zip" -d $JMETER_HOME
