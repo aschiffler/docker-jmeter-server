@@ -67,9 +67,9 @@
           <stringProp name="3433489">pass</stringProp>
         </collectionProp>
         <collectionProp name="UserParameters.thread_values">
-          <collectionProp name="41141545">
+          <collectionProp name="41145769">
             <stringProp name="-730598642">${user1}</stringProp>
-            <stringProp name="-889949709">${pass2}</stringProp>
+            <stringProp name="-889949740">${pass1}</stringProp>
           </collectionProp>
           <collectionProp name="41034688">
             <stringProp name="-730598611">${user2}</stringProp>
