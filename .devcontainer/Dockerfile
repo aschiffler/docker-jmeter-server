@@ -12,13 +12,13 @@ ENV	JMETER_DOWNLOAD_URL  https://archive.apache.org/dist/jmeter/binaries/apache-
 # Set TimeZone, See: https://github.com/gliderlabs/docker-alpine/issues/136#issuecomment-612751142
 ARG TZ="Europe/Amsterdam"
 ENV TZ ${TZ}
-RUN    apt update \
-	&& apt upgrade \
-	&& apt install ca-certificates \
+RUN    apk update \
+	&& apk upgrade \
+	&& apk add ca-certificates \
 	&& update-ca-certificates \
-	&& apt install --update openjdk8-jre tzdata curl unzip bash \
-	&& apt install --no-cache nss \
-	&& rm -rf /var/cache/apt/* \
+	&& apk add --update openjdk8-jre tzdata curl unzip bash \
+	&& apk add --no-cache nss \
+	&& rm -rf /var/cache/apk/* \
 	&& mkdir -p /tmp/dependencies  \
 	&& curl -L --silent ${JMETER_DOWNLOAD_URL} >  /tmp/dependencies/apache-jmeter-${JMETER_VERSION}.tgz  \
 	&& mkdir -p /opt  \
