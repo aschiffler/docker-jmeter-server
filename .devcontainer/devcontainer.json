@@ -2,5 +2,12 @@
 	"name": "jmeter-dev",
 	"build": {
 		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ritwickdey.LiveServer"
+			]
+		}
 	}
 }

@@ -1,5 +1,6 @@
-[![Docker Build](https://github.com/justb4/docker-jmeter/actions/workflows/docker.yml/badge.svg)](https://github.com/justb4/docker-jmeter/actions/workflows/docker.yml)
-[![Patreon](https://img.shields.io/badge/patreon-donate-yellow.svg)](https://patreon.com/justb4)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/aschiffler/docker-jmeter-server?quickstart=1)
+
+(_You will need a github account to do so_)
 
 # docker-jmeter
 ## Image on Docker Hub
