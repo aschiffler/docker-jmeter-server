@@ -1,0 +1,6 @@
+{
+	"name": "jmeter-dev",
+	"build": {
+		"dockerfile": "../Dockerfile"
+	}
+}
