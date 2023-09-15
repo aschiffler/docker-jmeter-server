@@ -1,7 +1,10 @@
 #!/bin/bash
 
 export TARGET_HOST="broker.hivemq.com"
+export TARGET_PORT="1883"
+export TARGET_TOPIC="test_plan"
 export PLAN="sub_pub.jmx"
+#export PLAN="sub_pub_tls.jmx"
 
 
 #----------------------------------
@@ -15,7 +18,9 @@ mkdir -p ${R_DIR}
 /bin/rm -f ${T_DIR}/test-plan.jtl ${T_DIR}/jmeter.log  > /dev/null 2>&1
 
 jmeter -Dlog_level.jmeter=DEBUG \
-	-JBROKER=${TARGET_HOST}  \
+	-JBROKER=${TARGET_HOST} -JBROKER=${TARGET_PORT}  -JBROKER=${TARGET_TOPIC} \
+	-JBROKER=${USER1} -JBROKER=${PASS1}  \
+	-JBROKER=${USER2} -JBROKER=${PASS2}  \
 	-n -t ${T_DIR}/${PLAN} -l ${T_DIR}/test-plan.jtl -j ${T_DIR}/jmeter.log \
 	-e -o ${R_DIR}
 
