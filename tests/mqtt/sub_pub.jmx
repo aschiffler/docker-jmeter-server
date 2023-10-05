@@ -15,7 +15,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="broker" elementType="Argument">
             <stringProp name="Argument.name">broker</stringProp>
-            <stringProp name="Argument.value">${__P(TARGET_HOST,broker.hivemq.com)}</stringProp>
+            <stringProp name="Argument.value">${__P(TARGET_HOST,test.mosquitto.org)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="port" elementType="Argument">
@@ -30,23 +30,23 @@
           </elementProp>
           <elementProp name="user1" elementType="Argument">
             <stringProp name="Argument.name">user1</stringProp>
-            <stringProp name="Argument.value">${__P(USER1,user1)}</stringProp>
+            <stringProp name="Argument.value">${__P(USER1,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="user2" elementType="Argument">
             <stringProp name="Argument.name">user2</stringProp>
-            <stringProp name="Argument.value">${__P(PASS1,pass1)}</stringProp>
+            <stringProp name="Argument.value">${__P(USER2,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="pass1" elementType="Argument">
             <stringProp name="Argument.name">pass1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">${__P(USER1,user2)}</stringProp>
+            <stringProp name="Argument.value">${__P(PASS1,)}</stringProp>
           </elementProp>
           <elementProp name="pass2" elementType="Argument">
             <stringProp name="Argument.name">pass2</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">${__P(PASS1,pass2)}</stringProp>
+            <stringProp name="Argument.value">${__P(PASS2,)}</stringProp>
           </elementProp>
           <elementProp name="threads_sub" elementType="Argument">
             <stringProp name="Argument.name">threads_sub</stringProp>
@@ -76,7 +76,7 @@
             <stringProp name="-889949709">${pass2}</stringProp>
           </collectionProp>
           <collectionProp name="459816055">
-            <stringProp name="-1039816366">nopass</stringProp>
+            <stringProp name="-1039816366"></stringProp>
             <stringProp name="0"></stringProp>
           </collectionProp>
         </collectionProp>
