@@ -50,12 +50,12 @@
           </elementProp>
           <elementProp name="threads_sub" elementType="Argument">
             <stringProp name="Argument.name">threads_sub</stringProp>
-            <stringProp name="Argument.value">${__P(THREADS_SUB,2)}</stringProp>
+            <stringProp name="Argument.value">${__P(THREADS_SUB,3)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="threads_pub" elementType="Argument">
             <stringProp name="Argument.name">threads_pub</stringProp>
-            <stringProp name="Argument.value">${__P(THREADS_PUB,2)}</stringProp>
+            <stringProp name="Argument.value">${__P(THREADS_PUB,3)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
